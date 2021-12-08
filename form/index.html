@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="This includes images and graphs about my website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+            });
+        });
+    </script>
+  
+
+</head>
+<body class="form">
+    <header>
+
+        <div class="main-menu">
+
+            <div class="menu-icon">
+                <svg viewbox="0 0 60 60">
+                    <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                    <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                  </svg>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/index.html">Connections to Christ</a></li>
+                    <li><a>Survey</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    
+    <main>
+
+        <article>
+            <h1>Writings of Isaiah</h1>
+            <div class="loading hidden">
+                <div class="loader">
+                    <svg>
+                        <circle cx="50" cy="50" r="40" stroke="var(--pink)" stroke-dasharray="78.5 235.5" stroke-width="3" fill="none" />
+                        <circle cx="50" cy="50" r="30" stroke="var(--yellow)" stroke-dasharray="62.8 188.8" stroke-width="3" fill="none" />
+                        <circle cx="50" cy="50" r="20" stroke="var(--blue)" stroke-dasharray="47.1 141.3" stroke-width="3" fill="none" />
+                    </svg>
+                </div>
+            </div>
+
+            <p class="success-message hidden">Thank you for your input!</p>
+            <p class="error-message hidden">Something has gone terribly wrong and I don't know what to do</p>
+
+        </article>
+
+        <aside>
+            <img src="../images/book.svg" alt="book">
+
+            <section>
+                <h2>Isaiah Survey</h2>
+                <form name="isaiah">
+                    <label for="name">Full name:</label>
+                    <input type="text" name="name" id="name">
+                
+                    <label for="chapter">Your Favorite Isaiah Chapter:</label>
+                    <input type="text" name="chapter" id="chapter">
+                
+                    <fieldset>
+                        <legend>Which of the following did you gain a stronger testimony of this semester? (Check all that apply)</legend>
+                
+                        <input type="checkbox" id="prophets" name="testimony" value="prophets">
+                        <label for="prophets">Prophets</label>
+                
+                        <input type="checkbox" id="revelation" name="testimony" value="revelation">
+                        <label for="revelation">Personal Revelation</label>
+                
+                        <input type="checkbox" id="jesus" name="testimony" value="jesus">
+                        <label for="Jesus">Jesus Christ</label>
+                
+                        <input type="checkbox" id="love" name="testimony" value="love">
+                        <label for="love">God's Love</label>
+                
+                        <input type="checkbox" id="disciple" name="testimony" value="disciple">
+                        <label for="disciple">Personal Discipleship</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What name you most consider to name your child?</legend>
+                
+                        <input type="radio" name="kname" id="shear" value="shear">
+                        <label for="shear">Shear-jashub</label>
+                
+                        <input type="radio" name="kname" id="maher" value="maher">
+                        <label for="maher">Maher-shalal-hash-baz</label>
+                
+                        <input type="radio" name="kname" id="immanuel" value="immanuel">
+                        <label for="immanuel">Immanuel</label>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>What was your favorite thing taught this semester?</legend>
+                
+                        <input type="radio" name="favorite" id="c/c" value="c/c">
+                        <label for="c/c">Chaos/Cosmos</label>
+                
+                        <input type="radio" name="favorite" id="vision" value="vision">
+                        <label for="vision">The Vision</label>
+                
+                        <input type="radio" name="favorite" id="history" value="history">
+                        <label for="history">History of Isaiah</label>
+                
+                        <input type="radio" name="favorite" id="servant" value="servant">
+                        <label for="servant">Israel Being the Servant</label>
+                    </fieldset>
+            
+                    <label for="recipe">What is the thing you will remember most from this class:</label>
+                    <textarea name="remember" id="remember" rows="10" placeholder="Write it here"></textarea>
+            
+                    <button type="submit" class="button">Submit Now</button>
+            
+                </form>
+            </section>
+        </aside>
+
+        <footer class="center">
+            <p>REL A 304 - Joshua Allen</p>
+          </footer>
+    </main>
+
+    <script>
+        // enter the URL for your Google Sheet 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbygUtJFZobl6g6IIXK1dy_QAUGoYYaGnGQmkux0ZHHV6D4qabes/exec'
+    
+        // add a name attribute to your <form> and enter its value here 
+        const form = document.forms['isaiah']
+    
+        // enter the value of your checkboxes' name attribute
+        const checkboxName = "testimony"
+    
+        // set these to your loader and message classes
+        const loading = document.querySelector('.loading')
+        const successMessage = document.querySelector('.success-message')
+        const errorMessage = document.querySelector('.error-message')
+    
+        // this will run when the submit button is clicked
+        form.addEventListener('submit', event => {
+          // stops default form handling so we can submit it to Google Sheets instead
+          event.preventDefault()
+    
+          // show the loader and hide form
+          form.classList.add('hidden')
+          loading.classList.remove('hidden')
+    
+          // collect the form values into an object that can be sent to Google Sheets
+          let fd = new FormData(form);
+    
+          /* If more than one checkbox is selected, the form will have multiple keys 
+             (checkbox name). Only the first checkbox value would be entered into 
+             Google Sheets. 
+             To get around this, concat all the selected checkbox values into a single 
+             string and send that value */
+    
+          // grab all the selected values stored as key/value pairs of checkboxName/value
+          let checkBoxValues = fd.getAll(checkboxName)
+    
+          // then delete them from the formData object
+          fd.delete(checkboxName);
+    
+          // create a string
+          let text = ""
+          if (checkBoxValues.length <= 2) {
+            text = checkBoxValues.join(" and ")
+          } else {
+            let end = checkBoxValues.pop();
+            text = checkBoxValues.join(", ");
+            text += ", and " + end;
+          }
+          // add the key/value pair checkboxName/text back to the formData object
+          fd.append(checkboxName, text);
+    
+          // use an asynchronous request to POST your formData object to your Google Sheet
+          fetch(scriptURL, {
+              method: 'POST',
+              body: fd,
+            })
+            // if response ok, show success message and hide loader, else display error
+            .then(response => {
+              loading.classList.add('hidden')
+              if (response.ok) {
+                console.log('Success!', response)
+                successMessage.classList.remove('hidden')
+              } else {
+                console.log("Something has gone terribly wrong and I'm rather afraid I don't know what to do.",
+                  response)
+                errorMessage.classList.remove('hidden')
+              }
+            })
+            // if error, show error message and hide loader
+            .catch(error => {
+              console.error('Error!', error.message)
+              errorMessage.classList.remove('hidden')
+              loading.classList.add('hidden')
+            })
+        })
+      </script>
+   
+    </body>
+
+</html>
